@@ -8,3 +8,32 @@
 <p>789<b>qaz</b>123</p>
 <a href="/Home/About">About</a>
 <img src="#" alt="Alternate Text" />
+
+@DateTime.Now
+
+@{ 
+    var num = 300;
+    var success = true;
+    var name = "Bing";
+    var message = "您好" + name;
+}
+
+<div>
+    @num
+</div>
+
+@if (success == true) { 
+    <p>
+        success:@success
+    </p>
+}
+
+@for (int i = 1; i <= 10; i++){
+    <p>@i</p>
+}
+<div>
+    @message,
+    <br />
+    現在時刻：@DateTime.Now
+    <br />
+</div>
